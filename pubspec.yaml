@@ -1,0 +1,326 @@
+name: khongmongkol
+description: "A new Flutter project."
+# The following line prevents the package from being accidentally published to
+# pub.dev using `flutter pub publish`. This is preferred for private packages.
+publish_to: 'none' # Remove this line if you wish to publish to pub.dev
+
+# The following defines the version and build number for your application.
+# A version number is three numbers separated by dots, like 1.2.43
+# followed by an optional build number separated by a +.
+# Both the version and the builder number may be overridden in flutter
+# build by specifying --build-name and --build-number, respectively.
+# In Android, build-name is used as versionName while build-number used as versionCode.
+# Read more about Android versioning at https://developer.android.com/studio/publish/versioning
+# In iOS, build-name is used as CFBundleShortVersionString while build-number is used as CFBundleVersion.
+# Read more about iOS versioning at
+# https://developer.apple.com/library/archive/documentation/General/Reference/InfoPlistKeyReference/Articles/CoreFoundationKeys.html
+# In Windows, build-name is used as the major, minor, and patch parts
+# of the product and file versions while build-number is used as the build suffix.
+version: 1.0.0+1
+
+environment:
+  sdk: '>=3.4.3 <4.0.0'
+
+# Dependencies specify other packages that your package needs in order to work.
+# To automatically upgrade your package dependencies to the latest versions
+# consider running `flutter pub upgrade --major-versions`. Alternatively,
+# dependencies can be manually updated by changing the version numbers below to
+# the latest version available on pub.dev. To see which dependencies have newer
+# versions available, run `flutter pub outdated`.
+dependencies:
+  flutter:
+    sdk: flutter
+  carousel_slider: ^5.0.0
+  shared_preferences: ^2.0.6
+  url_launcher: ^6.3.1
+  permission_handler: ^10.0.0
+  webview_flutter: ^4.8.0
+
+
+  # The following adds the Cupertino Icons font to your application.
+  # Use with the CupertinoIcons class for iOS style icons.
+  cupertino_icons: ^1.0.6
+
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+  google_maps_flutter: ^2.2.0
+
+  # The "flutter_lints" package below contains a set of recommended lints to
+  # encourage good coding practices. The lint set provided by the package is
+  # activated in the `analysis_options.yaml` file located at the root of your
+  # package. See that file for information about deactivating specific lint
+  # rules and activating additional ones.
+  flutter_lints: ^3.0.0
+
+# For information on the generic Dart part of this file, see the
+# following page: https://dart.dev/tools/pub/pubspec
+
+# The following section is specific to Flutter packages.
+flutter:
+
+  # The following line ensures that the Material Icons font is
+  # included with your application, so that you can use the icons in
+  # the material Icons class.
+  uses-material-design: true
+
+  # To add assets to your application, add an assets section, like this:
+  # assets:
+  #   - images/a_dot_burr.jpeg
+  #   - images/a_dot_ham.jpeg
+
+  # An image asset can refer to one or more resolution-specific "variants", see
+  # https://flutter.dev/assets-and-images/#resolution-aware
+
+  # For details regarding adding assets from package dependencies, see
+  # https://flutter.dev/assets-and-images/#from-packages
+
+  # To add custom fonts to your application, add a fonts section here,
+  # in this "flutter" section. Each entry in this list should have a
+  # "family" key with the font family name, and a "fonts" key with a
+  # list giving the asset and other descriptors for the font. For
+  # example:
+  # fonts:
+  #   - family: Schyler
+  #     fonts:
+  #       - asset: fonts/Schyler-Regular.ttf
+  #       - asset: fonts/Schyler-Italic.ttf
+  #         style: italic
+  #   - family: Trajan Pro
+  #     fonts:
+  #       - asset: fonts/TrajanPro.ttf
+  #       - asset: fonts/TrajanPro_Bold.ttf
+  #         weight: 700
+  #
+  # For details regarding fonts from package dependencies,
+  # see https://flutter.dev/custom-fonts/#from-packages
+
+  assets:
+    - assets/wallpaper.png
+    - assets/logo.png
+    - assets/heading.png
+    - assets/welcome.png
+    - assets/icon_bd.png
+    - assets/card.png
+    - assets/1st_home.png
+    - assets/2nd_home.png
+    - assets/1st.png
+    - assets/2nd.png
+    - assets/3rd.png
+    - assets/3rd_home.png
+    - assets/home_header.png
+    - assets/home_header2.png
+    - assets/icon_home1.png
+    - assets/icon_home2.png
+    - assets/icon_home3.png
+    - assets/banner-1.png
+    - assets/banner-2.png
+    - assets/banner-3.png
+    - assets/cover-1.png
+    - assets/cover-2.png
+    - assets/cover-3.png
+    - assets/cover-4.png
+    - assets/cover-5.png
+    - assets/cover-6.png
+    - assets/wallpaper/วอลการ์ตูน-1.jpg
+    - assets/wallpaper/วอลการ์ตูน-2.jpg
+    - assets/wallpaper/วอลการ์ตูน-3.jpg
+    - assets/wallpaper/วอลการ์ตูน-4.jpg
+    - assets/wallpaper/วอลการ์ตูน-5.jpg
+    - assets/wallpaper/วอลการ์ตูน-6.jpg
+    - assets/wallpaper/วอลการ์ตูน-7.jpg
+    - assets/wallpaper/วอลการ์ตูน-8.jpg
+    - assets/wallpaper/วอลการ์ตูน-9.jpg
+    - assets/wallpaper/ดาวจันทร์.jpg
+    - assets/wallpaper/ดาวพฤหัส.jpg
+    - assets/wallpaper/ดาวพุธ.jpg
+    - assets/wallpaper/ดาวศุกร์.jpg
+    - assets/wallpaper/ดาวเสาร์.jpg
+    - assets/wallpaper/ดาวอังคาร.jpg
+    - assets/wallpaper/ดาวอาทิตย์.jpg
+    - assets/wallpaper/ทาโรต์-1.png
+    - assets/wallpaper/ทาโรต์-2.png
+    - assets/wallpaper/ทาโรต์-3.png
+    - assets/wallpaper/ทาโรต์-4.png
+    - assets/wallpaper/ทาโรต์-5.png
+    - assets/wallpaper/ทาโรต์-6.png
+    - assets/wallpaper/ทาโรต์-7.png
+    - assets/wallpaper/ทาโรต์-8.png
+    - assets/wallpaper/ทาโรต์-9.png
+    - assets/wallpaper/ทาโรต์-10.png
+    - assets/wallpaper/ท้าวเวส-สี-1.jpg
+    - assets/wallpaper/ท้าวเวส-สี-2.jpg
+    - assets/wallpaper/ท้าวเวส-สี-3.jpg
+    - assets/wallpaper/ท้าวเวส-สี-4.jpg
+    - assets/wallpaper/ท้าวเวส-สี-5.jpg
+    - assets/wallpaper/ท้าวเวส-สี-6.jpg
+    - assets/wallpaper/ท้าวเวส-สี-7.jpg
+    - assets/wallpaper/พระแม่-1.jpg
+    - assets/wallpaper/พระแม่-2.jpg
+    - assets/wallpaper/พระแม่-3.jpg
+    - assets/wallpaper/พระแม่-4.jpg
+    - assets/wallpaper/พระแม่-5.jpg
+    - assets/wallpaper/พระแม่-6.jpg
+    - assets/wallpaper/พระแม่-7.jpg
+    - assets/wallpaper/พระแม่-8.jpg
+    - assets/wallpaper/พระแม่-9.jpg
+    - assets/wallpaper/พระแม่-10.jpg
+    - assets/wallpaper/พระแม่-11.jpg
+    - assets/wallpaper/พระแม่-12.jpg
+    - assets/wallpaper/เรียน-1.png
+    - assets/wallpaper/เรียน-2.png
+    - assets/wallpaper/เรียน-3.png
+    - assets/wallpaper/เรียน-4.png
+    - assets/wallpaper/เรียน-5.png
+    - assets/wallpaper/เรียน-6.png
+    - assets/wallpaper/เรียน-7.png
+    - assets/wallpaper/เรียน-8.png
+    - assets/wallpaper/เรียน-9.png
+    - assets/wallpaper/เรียน-10.png
+    - assets/wallpaper/เรียน-11.png
+    - assets/wallpaper/เรียน-12.png
+    - assets/wallpaper/วันจันทร์-1.jpg
+    - assets/wallpaper/วันพฤหัส-1.jpg
+    - assets/wallpaper/วันพุธ-1.jpg
+    - assets/wallpaper/วันศุกร์-1.jpg
+    - assets/wallpaper/วันเสาร์-1.jpg
+    - assets/wallpaper/วันอังคาร-1.jpg
+    - assets/wallpaper/วันอาทิตย์-1.jpg
+    - assets/flowerBG.png
+    - assets/jewel.png
+    - assets/khong.png
+    - assets/mon.png
+    - assets/tue.png
+    - assets/wed.png
+    - assets/thu.png
+    - assets/fri.png
+    - assets/sat.png
+    - assets/sun.png
+    #monday
+    - assets/monday/plant/โป๊ยเซียน.png
+    - assets/monday/plant/มะพร้าว.png
+    - assets/monday/plant/ว่านมหาลาภ.png
+    - assets/monday/thing/ปางห้ามญาติ.png
+    - assets/monday/thing/พญาครุฑ.png
+    - assets/monday/thing/พระรอด.png
+    - assets/monday/gem/ทับทิม.png
+    - assets/monday/gem/มูนสโตน.png
+    - assets/monday/gem/โรสควอสซ์.png
+    
+    #tuesday
+    - assets/tuesday/plant/เข็ม.png
+    - assets/tuesday/plant/โป๊ยเซียน.png
+    - assets/tuesday/plant/ว่านมหานิยม.png
+    - assets/tuesday/thing/พระพง.png
+    - assets/tuesday/thing/สมเด็จวัดระฆัง.png
+    - assets/tuesday/thing/องค์พรหม.png
+    - assets/tuesday/gem/พวงชมพู.png
+    - assets/tuesday/gem/เพชร.png
+    - assets/tuesday/gem/มรกต.png
+
+    #wednesday
+    - assets/wednesday/plant/ต้นศุภโชค.jpg
+    - assets/wednesday/plant/ว่านธรณีสาร.jpg
+    - assets/wednesday/plant/ว่านสี่ทิศ.jpg
+    - assets/wednesday/thing/ปางอุ้มบาตร.png
+    - assets/wednesday/thing/พระแก้วมรกต.png
+    - assets/wednesday/thing/หลวงปู่โต_พรหม.png
+    - assets/wednesday/gem/โกเมน.png
+    - assets/wednesday/gem/มรกต.png
+    - assets/wednesday/gem/โอปอล์.png
+
+    #thursday
+    - assets/thursday/plant/ต้นศุภโชค.jpg
+    - assets/thursday/plant/ไผ่.jpg
+    - assets/thursday/plant/ว่านเพชรนารายณ์.jpg
+    - assets/thursday/thing/กรุเตาเรียง.png
+    - assets/thursday/thing/ปู่ฤาษี.png
+    - assets/thursday/thing/พระแม่อุมา.png
+    - assets/thursday/gem/บุษรมคัม.png
+    - assets/thursday/gem/เพชร.png
+    - assets/thursday/gem/ลูกแก้ว.png
+
+    #friday
+    - assets/friday/plant/ต้นกวักมรกต.jpg
+    - assets/friday/plant/ต้นเฟิร์นข้าหลวง.jpg
+    - assets/friday/plant/ว่านเศรษฐีเรือนกลาง.jpg
+    - assets/friday/thing/ปางรำพึง.png
+    - assets/friday/thing/รูปปั้นหนู.png
+    - assets/friday/thing/หลวงปู่โต๊ะ.png
+    - assets/friday/gem/ทอง.png
+    - assets/friday/gem/โมรา.png
+    - assets/friday/gem/อความารีน.png
+    
+
+    #saturday
+    - assets/saturday/plant/ต้นวาสนา.png
+    - assets/saturday/plant/ไผ่มงคล.png
+    - assets/saturday/plant/โมก.png
+    - assets/saturday/thing/พญานาคราช.png
+    - assets/saturday/thing/พระกำแพงว่านหน้าทอง.png
+    - assets/saturday/thing/พระปางนาคปรก.png
+    - assets/saturday/gem/ไทเกอร์อาย.png
+    - assets/saturday/gem/นิลดำ.png
+    - assets/saturday/gem/ออบซิเดียน.png
+
+    #sunday
+    - assets/sunday/plant/ต้นราชพฤกษ์.png
+    - assets/sunday/plant/มะพร้าว.png
+    - assets/sunday/plant/ว่านมหาลาภ.png
+    - assets/sunday/thing/พระแม่อุมาเทวี.png
+    - assets/sunday/thing/พระแก้ว.png
+    - assets/sunday/thing/พระโพธิสัตว์กวนอิม.png
+    - assets/sunday/gem/โกเมน.png
+    - assets/sunday/gem/คาร์เนเลียน.png
+    - assets/sunday/gem/ซันสโตน.png
+
+    - assets/fri_t1_m1.png
+    - assets/fri_t2_m1.png
+    - assets/fri_t3_m1.png
+    - assets/fri_t3_m2.png
+    - assets/fri_t3_m3.png
+
+    - assets/mon_t1_m1.png
+    - assets/mon_t1_m2.png
+    - assets/mon_t2_m1.png
+    - assets/mon_t3_m1.png
+
+    - assets/sat_t1_m1.png
+    - assets/sat_t1_m2.png
+    - assets/sat_t1_m3.png
+    - assets/sat_t2_m1.png
+    - assets/sat_t2_m2.png
+    - assets/sat_t2_m3.png
+    - assets/sat_t3_m1.png
+    - assets/sat_t3_m2.png
+
+    - assets/sun_t1_m1.png
+    - assets/sun_t1_m2.png
+    - assets/sun_t1_m3.png
+    - assets/sun_t2_m1.png
+    - assets/sun_t2_m1.png
+    - assets/sun_t2_m2.png
+    - assets/sun_t2_m3.png
+    - assets/sun_t3_m1.png
+    - assets/sun_t3_m2.png
+    - assets/sun_t3_m3.png
+
+    - assets/thu_t1_m1.png
+    - assets/thu_t2_m1.png
+    - assets/thu_t3_m1.png
+
+    - assets/tue_t1_m1.png
+    - assets/tue_t2_m1.png
+    - assets/tue_t3_m1.png
+    - assets/tue_t3_m2.png
+    - assets/tue_t3_m3.png
+    - assets/tue_t2_m1.png
+    - assets/tue_t1_m1.png
+
+    - assets/wed_t1_m1.png
+    - assets/wed_t2_m1.png
+    - assets/wed_t3_m1.png
+
+
+
+
