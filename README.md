@@ -7,7 +7,6 @@
   <img src="https://github.com/user-attachments/assets/e13c6412-436c-4346-a7ee-91c45b16d079" height="250">
   <img src="https://github.com/user-attachments/assets/af486382-0e14-4a8c-849c-2a59a3f881c3" height="250">
   <img src="https://github.com/user-attachments/assets/ce39181c-39dc-4839-9f9f-72000ef52d3d" height="250">
-  <img src="https://github.com/user-attachments/assets/895141ce-4122-4a3e-8072-549faa288599" height="250">
 </p>
 
 An app providing knowledge about auspicious items. Key features include viewing items based on birth dates, as well as a giveaway feature for wallpapers in various categories and a random wallpaper distribution.
